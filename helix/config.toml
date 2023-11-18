@@ -1,0 +1,11 @@
+theme = "monokai_aqua"
+
+[editor]
+true-color = true
+line-number = "relative"
+bufferline = "always"
+
+[editor.indent-guides]
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1

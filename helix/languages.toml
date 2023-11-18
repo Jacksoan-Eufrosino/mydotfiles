@@ -1,0 +1,23 @@
+[language-server.pyright]
+command = "pyright-langserver"
+args =["--stdio"] 
+
+[language-server.pyright.config.pyright.inlayHints]
+functionReturnTypes = true
+variableTypes = true
+
+[language-server.pyright.config.python.analysis]
+autoSearchPaths = true
+diagnosticMode = "workspace"
+useLibraryCodeForTypes = true
+
+[language-server.pylsp.config]
+pylsp.plugins.rope_autoimport.enabled = true
+
+[[language]]
+name = "python"
+file-types = ["py", "pyi"]
+roots = ["pyproject.toml", "pyrightconfig.json"]
+# language-servers = ["pyright"]
+formatter = { command = "black", args = ["-"] }
+auto-format = true
